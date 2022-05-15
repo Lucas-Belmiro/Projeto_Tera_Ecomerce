@@ -1,0 +1,127 @@
+#carouselExampleControls{
+    width: 90%;
+    margin-left: 50%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.area-de-cadastro{
+    background-color: blue;
+    display: table;
+    width: 100%;
+    height: 100px;
+}
+
+.area-de-cadastro p{  
+
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+   color: white;
+
+}
+
+.area-de-cadastro p a{
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+}
+.produtos{
+    width: 90%;
+    display: flex;
+    place-content: center start;
+    margin-left: 8%;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5%;
+   
+}
+
+.produtos img {
+    width: 70%;
+}
+
+.setas{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.setas img{
+    width: 3%;
+}
+
+.textodivisor{
+    font-size: 32px;
+    color: #3B3EFB;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.preco{
+    font-size: 18px;
+    color: #3B3EFB;
+    font-weight: 500;
+}
+
+.nomeProduto{
+    font-size: 22px;
+    color: #2F302B;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.infoExtra{
+    font-size: 16px;
+    color: #3B3EFB;
+    margin-top: -13px;
+}
+
+
+.conteudoBlog img{
+  
+     width: 80%;
+    height: 80%; 
+
+    text-align: center;
+
+}
+
+
+.conteudoBlog {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+
+    margin: 90px;
+    margin-top: 80px;
+   
+}
+
+.blog a{
+
+    font-size: 18px;
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #3B3EFB;
+   
+}
+
+.blog .blogNome{
+    margin-top: 14px;
+    font-weight:bolder;
+    color: #2F302B;
+    font-size: 24px;
+   
+}
+
