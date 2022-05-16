@@ -231,3 +231,15 @@ footer div a{
     margin: 0 7px;
 }
 
+.space:hover{
+    background-color: rgb(197, 197, 197);
+}
+.clube:hover{
+    font-size: 110%;
+    transition: 1s;
+}
+
+.imagemdecadastro:hover{
+    font-size: 50%;
+    transition: 5ms;
+}
