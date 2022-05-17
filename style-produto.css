@@ -1,0 +1,335 @@
+#navPreto{
+    background-color: #2F302B;
+    width: 100%;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+#navCinza{
+    background-color: #dbdbdb;
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+}
+.logo1{
+    position: absolute;
+    left: 6%;
+    padding-top: 30px;
+    
+}
+.iconesNav{
+    position: absolute;
+    left: 35%;
+    padding-top: 35px;
+}
+.space{
+    /* ESPAÇO ENTRE AS IMAGENS HOMEM MULHER CRIANÇA OFERTAS */
+    margin: 0 7px;
+}
+.pesquisarImg{
+    position: absolute;
+    left: 82%;
+    padding-top: 35px;
+}
+.iconeCantoDireito{
+    position: absolute;
+    padding-top: 35px;
+    left: 88%;
+}
+.spaceCantoD{
+    margin: 0 5px;
+}
+
+#carouselExampleControls{
+    width: 90%;
+    margin-left: 50%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.container-extraproduto{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+
+.imagens-produtos .imagem-principal{
+    width: 294px;
+    height: 311px;
+}
+
+.selecao-imagens img{
+    width: 78px;
+    height: 78px;
+    margin-right: 20px;
+}
+
+.container-tamanhos{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-tamanhos div p{
+    font-size: 14px;
+}
+
+.escolhas-produto p{
+    font-size: 16px;
+}
+
+.escolhas-produto h1{
+    font-size: 20px;
+}
+
+.botao-adc-carrinho{
+    width: 306px;
+    height: 62px;
+    background-color: #3B3EFB;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botao-adc-carrinho p{
+   font-size: 20px;
+   font-weight: 600;
+   color:white;
+   margin: 0;
+
+}
+
+.produtos{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container-carrossel{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.podutos .item-produto{
+    width: 400px; 
+
+}
+
+.produtos .item-produto:hover {
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+
+.produtos .item-produto img{
+    width: 200px;  
+}
+
+.produtos .item-produto p{
+    margin: 10px;
+}
+
+.container-produtos{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.container-produtos .produtos a{
+    text-decoration: none;
+}
+
+.seta{
+    width: 30px;
+    height: 30px;
+}
+
+.seta:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.textodivisor{
+    font-size: 32px;
+    color: #3B3EFB;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.preco{
+    font-size: 18px;
+    color: #3B3EFB;
+    font-weight: 500;
+}
+
+.nomeProduto{
+    font-size: 22px;
+    color: #2F302B;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.infoExtra{
+    font-size: 16px;
+    color: #3B3EFB;
+    margin-top: -13px;
+}
+
+
+.conteudoBlog img{
+  
+    width: 280px;
+    height: 310px;
+    margin:10px; 
+
+    text-align: center;
+
+}
+
+
+.conteudoBlog {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+   
+}
+
+.blog a{
+
+    font-size: 18px;
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #3B3EFB;  
+}
+
+.conteudoBlog .blog a:hover{
+   font-weight: bold;
+   transition: 0.5s;
+}
+
+.blog p{
+    margin: 10px;
+}
+
+.blog .blogNome{
+    margin-top: 14px;
+    font-weight:bolder;
+    color: #2F302B;
+    font-size: 24px;
+   
+}
+
+/*----------------------------- FOOTER  ------------------------------------------------------- */
+p{
+    margin:0;
+}
+.footerAzul{
+    background-color: #3b3efb;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.footerAzul a{
+    text-decoration: none;
+}
+.footerAzul a:hover{
+    transform: scale(1.2);
+    transition: 0.5s;   
+}
+
+.footerPreto{
+    background-color: #2F302B;
+    width: 100%;
+    height: 350px;
+    padding: 60px;
+}
+.footerPreto p{   
+    text-align: center;
+    color: white; 
+}
+.retFaixaAzul{
+    position: absolute;
+    padding-top: 35px;
+    left: 58%;
+}
+
+ .botao-cadastrar{
+     width: 306px;
+     height: 62px;
+     background-color: #FFFFFF;
+     border-radius: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+ }
+
+ .botao-cadastrar p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2F302B;
+    margin: 0;
+
+ }
+
+.textoFooterAzul{
+    color: white;
+    max-width: 400px;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;    
+}
+.textoFooterPreto{
+    
+    font-size: 25px;
+}
+.logo2{
+    text-align: center;
+}
+.redesSociais{
+    padding: 20px;
+    text-align: center;
+    padding-top:40px;
+    padding-bottom: 40px;    
+}
+footer div a{
+    margin: 0 7px;
+}
+
+.space:hover{
+    background-color: rgb(197, 197, 197);
+}
+.clube:hover{
+    font-size: 110%;
+    transition: 1s;
+}
+
+.imagemdecadastro:hover{
+    font-size: 50%;
+    transition: 5ms;
+}
