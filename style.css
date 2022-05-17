@@ -42,11 +42,6 @@
     margin: 0 5px;
 }
 
-
-
-
-
-
 #carouselExampleControls{
     width: 90%;
     margin-left: 50%;
@@ -56,18 +51,16 @@
 
 .area-de-cadastro{
     background-color: #3B3EFB;
-    display: table;
     width: 100%;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .area-de-cadastro p{  
-
-   display: table-cell;
-   text-align: center;
-   vertical-align: middle;
-   color: white;
-
+    color: white;
+    margin: 0;
 }
 
 .area-de-cadastro p a{
@@ -77,32 +70,57 @@
     color: white;
 }
 .produtos{
-    width: 90%;
     display: flex;
-    place-content: center start;
-    margin-left: 8%;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 5%;
-   
-}
-
-.produtos img {
-    width: 70%;
-}
-
-.setas{
+    align-items: center;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    right: 4%;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-.setas img{
-    width: 3%;
+.container-carrossel{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.podutos .item-produto{
+    width: 400px; 
+
+}
+
+.produtos .item-produto:hover {
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+
+.produtos .item-produto img{
+    width: 200px;  
+}
+
+.produtos .item-produto p{
+    margin: 10px;
+}
+
+.container-produtos{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.container-produtos .produtos a{
+    text-decoration: none;
+}
+
+.seta{
+    width: 30px;
+    height: 30px;
+}
+
+.seta:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .textodivisor{
@@ -137,8 +155,9 @@
 
 .conteudoBlog img{
   
-     width: 80%;
-    height: 80%; 
+    width: 280px;
+    height: 310px;
+    margin:10px; 
 
     text-align: center;
 
@@ -150,9 +169,10 @@
     justify-content: space-around;
     text-align: center;
     align-items: center;
-
-    margin: 90px;
     margin-top: 80px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
    
 }
 
@@ -162,8 +182,16 @@
     text-decoration: none;
     text-decoration: underline;
     font-weight: 600;
-    color: #3B3EFB;
-   
+    color: #3B3EFB;  
+}
+
+.conteudoBlog .blog a:hover{
+   font-weight: bold;
+   transition: 0.5s;
+}
+
+.blog p{
+    margin: 10px;
 }
 
 .blog .blogNome{
@@ -175,17 +203,27 @@
 }
 
 /*----------------------------- FOOTER  ------------------------------------------------------- */
-
+p{
+    margin:0;
+}
 .footerAzul{
     background-color: #3b3efb;
     width: 100%;
     height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
 }
-.footerAzul P{
-   display: table-cell;
-   vertical-align: middle;
-   color: white;
+
+.footerAzul a{
+    text-decoration: none;
 }
+.footerAzul a:hover{
+    transform: scale(1.2);
+    transition: 0.5s;   
+}
+
 .footerPreto{
     background-color: #2F302B;
     width: 100%;
@@ -201,18 +239,32 @@
     padding-top: 35px;
     left: 58%;
 }
-.cadastrar{
-    position: absolute;
-    padding-top: 52px;
-    left: 60%;
-}
+
+ .botao-cadastrar{
+     width: 306px;
+     height: 62px;
+     background-color: #FFFFFF;
+     border-radius: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+ }
+
+ .botao-cadastrar p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2F302B;
+    margin: 0;
+
+ }
+
 .textoFooterAzul{
-    position: absolute;
+    color: white;
     max-width: 400px;
     font-size: 25px;
-    font-family:Arial, Helvetica, sans-serif ;
-    padding-top: 25px;
-    left: 15%;   
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;    
 }
 .textoFooterPreto{
     
