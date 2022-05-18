@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 #navPreto{
     background-color: #2F302B;
     width: 100%;
@@ -51,6 +55,8 @@
     align-content: center;
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
 }
 
@@ -96,6 +102,8 @@
     justify-content: space-between;
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 100px;
+   
 }
 
 .container-carrinho .primeira-sessao .produto{
@@ -140,6 +148,90 @@
     border-color: #3B3EFB;
     margin-right: 10px;
 }
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.botao-menos{
+    color: #3B3EFB;
+    font-size: 20px;
+    font-weight: 700;
+}
+.botao-mais{
+    color: #3B3EFB;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.muda-quantidade{
+    width: 40px;
+    height: 25px;
+    background-color: white;
+    border: solid 1px #DBDBDB; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18   px;
+}
+
+.separador-carrinho{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.separador-resumo{
+
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.terceira-sessao{
+    width: 260px;
+}
+
+.subitens{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.botao-finalizar-carrinho{
+    width: 255px;
+    height: 51px;
+    background-color: #3B3EFB;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.botao-finalizar-carrinho p{
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+    margin: 0;
+ 
+ }
+ 
+ .botao-finalizar-carrinho:hover{
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
 
 /*----------------------------- FOOTER  ------------------------------------------------------- */
 p{
