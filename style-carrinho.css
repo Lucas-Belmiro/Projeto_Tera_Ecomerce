@@ -25,12 +25,24 @@ a{
 }
 .iconesNav{
     position: absolute;
-    left: 35%;
-    padding-top: 35px;
+    left: 400px;
+    padding-top: 38px;
+
+   
 }
 .space{
     /* ESPAÇO ENTRE AS IMAGENS HOMEM MULHER CRIANÇA OFERTAS */
     margin: 0 7px;
+    font-size: 18px;
+    color: #707070;
+    font-weight: 600;
+    text-decoration: none;
+}
+.input-pesquisar{
+    position: absolute;
+    left: 66%;
+    padding-top: 30px;
+    
 }
 .pesquisarImg{
     position: absolute;
@@ -128,7 +140,7 @@ a{
  
 }
 
-.container-carrinho .primeira-sessao .frete p{
+.container-carrinho .primeira-sessao .frete a{
     color: white;
    
 }
@@ -314,9 +326,9 @@ footer div a{
     margin: 0 7px;
 }
 
-.space:hover{
+/* .space:hover{
     background-color: rgb(197, 197, 197);
-}
+} */
 .clube:hover{
     font-size: 110%;
     transition: 1s;
