@@ -1,178 +1,306 @@
 <!DOCTYPE html>
 <html lang="pt.bt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>LBRW - Página do carrinho</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style-carrinho.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>LBRW - Página do produto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style-carrinho.css">
+
 </head>
+
 <body>
-    <nav>
-      <div id="navPreto"></div>
-      <div id="navCinza">
-        <div class="logo1">
-          <a href="index.html" target="_self"><img src="./images/Logo_LBRW_SVG.svg" width="180px" height="40px" alt="logo LBRW"></a>
-        </div>
-        <div class="iconesNav">
-          <a class="space" href="#">HOMEM</a>
-          <a class="space" href="#">MULHER</a>
-          <a class="space" href="#">CRIANÇA</a>
-          <a class="space" href="#">OFERTAS</a>
-        </div>
-        <div class="input-pesquisar">
-          <form class="form-inline ">
-            <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
-          </form>  
-        </div>
-          <div class="pesquisarImg">
-            <a href="#"><img src="./images/search-solid.png" width="20px" height="20px" alt="pesquisar"></a>
-          </div>
-          <div class="iconeCantoDireito">
-            <a class="spaceCantoD" href="#"><img src="./images/user-solid.png" width="20px" height="20px" alt="usuario"></a>
-            <a class="spaceCantoD" href="#"><img src="./images/heart-solid.png" width="20px" height="20px" alt="coração"></a>
-            <a class="spaceCantoD" href="#"><img src="./images/shopping-bag-solid.png" width="20px" height="20px" alt="sacola"></a>
-          </div>
+
+  <div id="nav-black"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/Logo_LBRW_SVG.svg" width="200px" alt="logo LBRW"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Masculino
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Casual</a></li>
+              <li><a class="dropdown-item" href="#">Esportivo</a></li>
+              <li><a class="dropdown-item" href="#">Festa</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Feminino
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Casual</a></li>
+              <li><a class="dropdown-item" href="#">Esportivo</a></li>
+              <li><a class="dropdown-item" href="#">Festa</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Infantil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Casual</a></li>
+              <li><a class="dropdown-item" href="#">Esportivo</a></li>
+              <li><a class="dropdown-item" href="#">Festa</a></li>
+            </ul>
+          </li>
+  
+        </ul>
+        <form class="search d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Nome do produto" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+        </form>
+  
+        <a class="icons" href=""><img src="./images/heart-solid.png" alt=""></a>
+        <a class="icons" href=""><img src="./images/user-solid.png" alt=""></a>
+        <a class="icons" href=""><img src="./images/shopping-bag-solid.png" alt=""></a>
+  
       </div>
-    </nav>
-      
+    </div>
+  </nav>
 
-    <section class="etapas">
-        <div class="etapa-ativa">
-          <p>Revisão</p>
-        </div>
-        <div class="etapa-fechada">
-          <p>Login</p>
-        </div>
-        <div class="etapa-fechada">
-          <p>Pagamento</p>
-        </div>
-    </section>
+   <!-- Cart -->
 
+   <div class="container">
+    <div class="row  responsive">
+      <div class="col">
+        <p class="stage-cart-1">Revisão</p>
+      </div>
+      <div class="col">
+        <p class="stage-cart-2">Login</p>
+      </div>
+      <div class="col">
+        <p class="stage-cart-2">Pagamento</p>
+      </div>
+    </div>
+  </div>
 
-    <section class="container-carrinho">
-
-      <section class="primeira-sessao">
-
-        <p class="separador-carrinho">Produto</p>
-
-        <div class="produto">
-          <img src="./images/1.png" alt="Tênis Nike preto">
-          
-          <div class="texto-produto">
-            <p>Tênis Nike Gold</p>
+  <div class="container mb-5">
+    <div class="row responsive">
+      <div class="col">
+        <p class="product-cart-name">Produto</p>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img class="image-highlight" src="./images/1.png" alt="">
+          </div>
+          <div class="col d-flex flex-column justify-content-center">
+            <p class="product-cart-details">Tênis Nike Gold</p>
             <p>Tam. 38</p>
             <p>Cor: preto</p>
           </div>
-         
         </div>
+        <p class="product-shipping">Calcule o frete</p>
+        
+        <div class="row d-flex justify-content-start align-items-center adjust-shipping">
+          <div class="col-md-auto">   
+            <input placeholder=" Insira o seu CEP" class="input-style" type="text">
+          </div>
+          <div class="col-md-auto">
+            <button class="button-cart">OK</button>
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="col">
+
+        <div class="col">
+          <div class="col d-flex mb-4 adjust-col">
+            <p class="product-cart-name">Quantidade</p>
+          </div>
   
-        <p class="separador-carrinho">Calcule o frete</p>
+          <div class="col botoes d-flex justify-content-center align-items-center">
+            <a href="javascript:diminui();" target="_self">
+              <div class="botao-menos">
+                <p>-</p>
+              </div>
+            </a>
   
-        <div class="frete">
-          <input type="text">
-          <div class="botao-ok">
-            <a href="#">OK</a>
+            <div class="muda-quantidade">
+              <p id="quantidadeProduto">1</p>
+            </div>
+  
+            <a href="javascript:aumenta();" target="_self">
+              <div class="botao-mais">
+                <p>+</p>
+              </div>
+            </a>
+  
           </div>
         </div>
 
-      </section>
+      </div>
 
-      <section class="segunda-sessao">
-        
-        <p class="separador-carrinho">Quantidade</p>
-        
 
-        <a href="javascript:diminui();" target="_self">
-        <div class="botoes">
-          <div class="botao-menos">
-              <p>-</p>
-          </div>
-        </a>
+      <div class="col d-flex flex-column justify-content-center adjust-col2">
 
-          <div  class="muda-quantidade">
-            <p id="quantidadeProduto">1</p>
-          </div>
-        
-          <a href="javascript:aumenta();">
-          <div class="botao-mais">
-            <p>+</p>
-          </div>
-          </a>
+        <div class="col">
+          <p class="product-cart-name2">Resumo</p>
         </div>
 
-      </section>
+        <div class="row">
 
-      <section class="terceira-sessao">
-        
-        <p class="separador-resumo">Resumo</p>
+          <div class="col">
+            <p>1 produto</p>
+          </div>
 
-        <div class="subitens">
-          <p>1 Produto</p>
-          <p>R$ 299,00</p>
+          <div class="col">
+            <p>R$ 299,00</p>
+          </div>
+          
         </div>
+        
+        <div class="row">
 
-        <div class="subitens">
-          <p>Frete</p>
-          <p>R$ 25,00</p>
-        </div>  
+          <div class="col">
+            <p>Frete</p>
+          </div>
+
+          <div class="col">
+            <p>R$ 25,00</p>
+          </div>
+
+        </div>
 
         <hr>
 
-        <div class="subitens">
-          <p class="total">Total</p>
-          <p>R$ 324,00</p>
+        <div class="row">
+
+          <div class="col">
+            <p class="resume-highlight">Total</p>
+          </div>
+
+          <div class="col">
+            <p>R$ 324,00</p>
+          </div>
+
         </div>
 
-        <a href="https://www.google.com.br/" target="_blank">
-          <div class="botao-finalizar-carrinho">
+        <button class="mt-5 button-cart2">COMPRAR</button>
 
-            <p>Finalizar a compra</p>
+      </div>
+    </div>
+  </div>
 
-           </div>
-         </a>
 
+
+  <!-- Área de Cadastro 2 -->
+
+  <div class="registration-area2 d-flex justify-content-center align-items-center">
+    <div class="container container-registration-area2 justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col box-button2">
+          <p class="registration-area2-text">Cadastre-se e receba ofertas e lançamentos antes de todo mundo!</p>
+        </div>
+        <div class="col-md-auto d-flex justify-content-center align-items-center">
+          <!-- <button type="button" class="btn btn-secondary btn-lg">Cadastre-se gratuitamente</button> -->
+          <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">
+            Cadastre-se gratuitamente
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Escreva o seu o nome e e-mail</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Nome:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">E-mail:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-dark text-center text-white">
+
+    <!-- logo -->
+
+    <div class="container">
+
+      <section>
+        <img class="tamanho-logo" src="./images/White_Logo_LBRW_SVG_Prancheta 1.svg" alt="logo2">
       </section>
 
+    </div>
 
-    </section>
+    <!-- Grid container -->
+    <div class="container p-4 pb-0 mb-4">
+      <!-- Section: Social media -->
+      <section class="mb-2">
+        <!-- Facebook -->
+        <a class="btn btn-floating m-1" href="#"><img src="./images/logoInsta.png" alt=""></a>
 
+        <!-- Twitter -->
+        <a class="btn btn-floating m-1" href="#"><img src="./images/logoTwitter.png" alt=""></a>
 
-       <footer>
-         <div class="footerAzul">
-           <P class="textoFooterAzul"> Cadastre-se e receba ofertas e lançamentos antes de todo mundo!  </P>
+        <!-- Instagram -->
+        <a class="btn btn-floating m-1" href="#"><img src="./images/logoFacebook.png" alt=""></a>
 
-           <a href="https://www.google.com.br/" target="_blank">
-            <div class="botao-cadastrar">
+        <!-- Linkedin -->
+        <a class="btn btn-floating m-1" href="#"><img src="./images/logoTwitter2.png" alt=""></a>
 
-              <p>Cadastre-se gratuitamente!</p>
-  
-             </div>
-           </a>
-           
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
 
-         </div>
-         <div class="footerPreto">
-           <div class="logo2">
-              <img src="./images/White_Logo_LBRW_SVG_Prancheta 1.svg" width="320px" height="60px" alt="logo2">
-           </div>  
-           <div class="redesSociais">
-              <a href="#"><img src="./images/logoInsta.png" width="50px" height="50px" alt="logo instagram"></a>
-              <a href="#"><img src="./images/logoTwitter.png" width="50px" height="50px" alt="logo twitter"></a>
-              <a href="#"><img src="./images/logoFacebook.png" width="50px" height="50px" alt="logo facebook"></a>
-              <a href="#"><img src="./images/logoTwitter2.png" width="50px" height="50px" alt="logo twitter 2"></a>
-           </div>
-           <p class="textoFooterPreto">LBRW - 2022 | Todos os direitos reservados</p>
-           
-         </div>
+    <!-- Copyright -->
+    <div class="text-center p-3 mt-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://lucasbelmiro.com.br/">lucasbelmiro.com.br</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
-       </footer>
+  <!-- Tags bootstrap -->
 
-       <!-- Tags bootstrap -->
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-      <script src="./script-carrinho.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="./script.js"></script>
 </body>
+
 </html>

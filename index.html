@@ -1,259 +1,598 @@
 <!DOCTYPE html>
 <html lang="pt.bt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>LBRW - Calçados</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>LBRW - Calçados</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <nav>
-      <div id="navPreto"></div>
-      <div id="navCinza">
-        <div class="logo1">
-          <a href="#"><img src="./images/Logo_LBRW_SVG.svg" width="180px" height="40px" alt="logo LBRW"></a>
-        </div>
-          <div class="iconesNav">
-            <a class="space" href="#">HOMEM</a>
-            <a class="space" href="#">MULHER</a>
-            <a class="space" href="#">CRIANÇA</a>
-            <a class="space" href="#">OFERTAS</a>
-          </div>
-          <div class="input-pesquisar">
-            <form class="form-inline ">
-              <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
-            </form>  
-          </div>
-          <div class="pesquisarImg">
-           <a href="#"><img src="./images/search-solid.png" width="20px" height="20px" alt="pesquisar"></a>
-           </div>
-          <div class="iconeCantoDireito">
-            <a class="spaceCantoD" href="#"><img src="./images/user-solid.png" width="20px" height="20px" alt="usuario"></a>
-            <a class="spaceCantoD" href="#"><img src="./images/heart-solid.png" width="20px" height="20px" alt="coração"></a>
-            <a class="spaceCantoD" href="#"><img src="./images/shopping-bag-solid.png" width="20px" height="20px" alt="sacola"></a>
-          </div>
-          
+
+  <div id="nav-black"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/Logo_LBRW_SVG.svg" width="200px" alt="logo LBRW"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Masculino
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Casual</a></li>
+              <li><a class="dropdown-item" href="#">Esportivo</a></li>
+              <li><a class="dropdown-item" href="#">Festa</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Feminino
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Casual</a></li>
+              <li><a class="dropdown-item" href="#">Esportivo</a></li>
+              <li><a class="dropdown-item" href="#">Festa</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Infantil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Casual</a></li>
+              <li><a class="dropdown-item" href="#">Esportivo</a></li>
+              <li><a class="dropdown-item" href="#">Festa</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="search d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Nome do produto" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+        </form>
+
+        <a class="icons" href=""><img src="./images/heart-solid.png" alt=""></a>
+        <a class="icons" href=""><img src="./images/user-solid.png" alt=""></a>
+        <a class="icons" href=""><img src="./images/shopping-bag-solid.png" alt=""></a>
+
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    
 
+  <!-- Carrosel do site -->
 
-    <!-- Carrosel do site -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/Image1.jpg" class="d-block w-100" alt="Logo da empresa com o texto: desafie o agora">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/image2.jpg" class="d-block w-100"
+          alt="Homem Adulto preparado para iniciar uma corrida. Ao lado aparece o logo da LBRW">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/Image1.jpg" class="d-block w-100" alt="Logo da empresa com o texto: desafie o agora">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/image2.jpg" class="d-block w-100" alt="Homem Adulto preparado para iniciar uma corrida. Ao lado aparece o logo da LBRW">
+  <!-- Convite de cadastro -->
+
+  <div class="row registration-area d-flex align-items-center m-0">
+    <div class="col-12 d-flex justify-content-center p-3">
+      <p class="p-3">Cadastre-se no LBRWClub para receber 15% de desconto. <a data-bs-toggle="modal"
+          data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="clube" href="https://www.google.com.br"
+          target="_blank">Entre para o clube</a></p>
+    </div>
+  </div>
+
+  <!-- Texto divisor -->
+
+  <h1 class="text-divider">OFERTAS</h1>
+
+  <!-- Seção de produtos -->
+
+  <!-- Carrosel de Produtos - slide 1 -->
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="card mt-3 card-size">
+                <img src="./images/3.png" class="card-img-top align-self-center"
+                  alt="Tênis da Nike preto com detalhes roxos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike Extend</h5>
+                  <p class="card-text">R$ 499,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="card hide-product mt-3 card-size">
+                <img src="./images/2.png" class="card-img-top align-self-center"
+                  alt="Tênis Fila preto com detalhes amarelos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Fila Sport</h5>
+                  <p class="card-text">R$ 299,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/1.png" class="card-img-top align-self-center"
+                  alt="Tênis Nike preto com detalhes dourados">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike Galaxy</h5>
+                  <p class="card-text">R$ 529,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-        <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
-          <span style="background-color: black;"  class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span style="background-color: black;" class="carousel-control-next-icon"  aria-hidden="true"></span>
-          <span class="visually-hidden"  >Next</span>
-        </button>
       </div>
 
-       <!-- Convite de cadastro -->
+      <!-- Carrossel de Produtos - Slide 2 -->
 
-        <div class="area-de-cadastro" ><p>Cadastre-se no LBRWClub para receber 15% de desconto. <a class="clube" href="https://www.google.com.br"  target="_blank">Entre para o clube</a></p></div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
 
-      <!-- Texto divisor -->
 
-      <h1 class="textodivisor">OFERTAS</h1>
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/4.png" class="card-img-top align-self-center"
+                  alt="Tênis da Nike Branco com detalhes azuis">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike WL</h5>
+                  <p class="card-text">R$ 422,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
 
-          
-      <!-- Seção de produtos -->
 
-       <section class="container-carrossel">
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="card mt-3 card-size">
+                <img src="./images/5.jpg" class="card-img-top align-self-center"
+                  alt="Tênis da Nike rosa claro com detalhes brancos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike XP</h5>
+                  <p class="card-text">R$ 358,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
 
-         <div class="container-produtos">
-
-        <!-- Botão de avanço e retroceder do carrossel -->
-
-      <img class="seta" src="images/SetaRt.png" alt="Seta de Retrocesso do campo de produtos">
-        <div class="produtos">
-
-          <a href="paginadeproduto.html" target="_self">
-           <div class="item-produto">
-                <img src="images/1.png" alt="Imagem de um tênis esportivo Nike preto com logo da Nike dourado">
-                <p class="preco">R$ 299,99</p>
-                <p class="nomeProduto"> Tênis Nike Gold</p>
-                <p class="infoExtra">Frete grátis</p>
-           </div>
-          </a>
-
-          <a href="https://www.google.com.br/" target="_blank">
-           <div class="item-produto">
-                <img src="images/2.png" alt="Imagem de um tênis esportivo Fila preto com detalhes brancos e amarelos. Apresenta o logo da marca na lateral">
-                <p class="preco">R$ 250,99</p>
-                <p class="nomeProduto">Tênis Fila Confort</p>
-                <p class="infoExtra">Frete grátis</p>
-           </div>
-
-          </a>
-
-          <a href="https://www.google.com.br/" target="_blank">
-           <div class="item-produto">
-                <img src="images/3.png" alt="Imagem de um tênis esportivo Nike preto com detalhes azuis, roxos e verdes. Apresenta o logo da Nike na lateral">
-                <p class="preco">R$ 340,99</p>
-                <p class="nomeProduto">Tênis Nike Advanced</p>
-                <p class="infoExtra">Frete grátis</p>
-           </div>
-
-          </a>
-              
-          <a href="https://www.google.com.br/" target="_blank">
-           <div class="item-produto">
-                <img src="images/4.png" alt="Imagem de um tênis esportivo Nike branco com detalhes azuis. Apresenta o logo da Nike na lateral">
-                <p class="preco">R$ 370,99</p>
-                <p class="nomeProduto">Tênis Nike Clean</p>
-                <p class="infoExtra">Frete grátis</p>
-           </div>
-          </a>
-          </div>
-
-           <img class="seta" src="images/SetaAv.png" alt="Seta de avanço do campo de produtos">
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/6.jpg" class="card-img-top align-self-center"
+                  alt="Tênis da Nike rosa escuro com detalhes amarelos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike Future</h5>
+                  <p class="card-text">R$ 522,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
 
           </div>
-
-       </section>
-
-
-    <!-- Texto divisor -->
-
-      <h1 class="textodivisor">MAIS VENDIDOS</h1>
-          
-    <!-- Seção de produtos -->
-
-    <section class="container-carrossel">
-
-      <div class="container-produtos">
-
-     <!-- Botão de avanço e retroceder do carrossel -->
-
-   <img class="seta" src="images/SetaRt.png" alt="Seta de Retrocesso do campo de produtos">
-     <div class="produtos">
-      <a href="paginadeproduto.html" target="_self">
-        <div class="item-produto">
-             <img src="images/1.png" alt="Imagem de um tênis esportivo Nike preto com logo da Nike dourado">
-             <p class="preco">R$ 299,99</p>
-             <p class="nomeProduto"> Tênis Nike Gold</p>
-             <p class="infoExtra">Frete grátis</p>
         </div>
-      </a>
-      <a href="https://www.google.com.br/" target="_blank">
-        <div class="item-produto">
-             <img src="images/2.png" alt="Imagem de um tênis esportivo Fila preto com detalhes brancos e amarelos. Apresenta o logo da marca na lateral">
-             <p class="preco">R$ 250,99</p>
-             <p class="nomeProduto">Tênis Fila Confort</p>
-             <p class="infoExtra">Frete grátis</p>
-        </div>
-      </a>
-      <a href="https://www.google.com.br/" target="_blank">
-        <div class="item-produto">
-             <img src="images/3.png" alt="Imagem de um tênis esportivo Nike preto com detalhes azuis, roxos e verdes. Apresenta o logo da Nike na lateral">
-             <p class="preco">R$ 340,99</p>
-             <p class="nomeProduto">Tênis Nike Advanced</p>
-             <p class="infoExtra">Frete grátis</p>
-        </div>
-      </a>
-          
-      <a href="https://www.google.com.br/" target="_blank">
-        <div class="item-produto">
-             <img src="images/4.png" alt="Imagem de um tênis esportivo Nike branco com detalhes azuis. Apresenta o logo da Nike na lateral">
-             <p class="preco">R$ 370,99</p>
-             <p class="nomeProduto">Tênis Nike Clean</p>
-             <p class="infoExtra">Frete grátis</p>
-        </div>
-      </a>
+      </div>
 
-       </div>
-        <img class="seta" src="images/SetaAv.png" alt="Seta de avanço do campo de produtos">
+      <!-- Carossel de Produtos - Slide 3 -->
 
-       </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
 
-    </section>
-
-       <!-- Texto divisor -->
-
-      <h1 class="textodivisor">BLOG</h1>
-
-      <!-- Conteúdo do blog -->
-
-       <section class="conteudoBlog">
-            <div class="blog">
-                
-                    <img src="images/blog1.png" alt="Foto de Homem amarrando o cadarço">
-                
-                
-                <p class="blogNome">Dicas de cuidados <br>para o seu tênis</br></p>
-                <a href="https://www.google.com.br/" target="_blank">SAIBA MAIS!</a>
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/7.jpg" class="card-img-top align-self-center"
+                  alt="Tênis da Nike preto com detalhes brancos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike World</h5>
+                  <p class="card-text">R$ 415,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
             </div>
 
-            <div class="blog">
-
-               
-                    <img src="images/blog2.png" alt="Foto de um homem se preparando para correr">
-         
-               
-                <p class="blogNome">Saiba como correr <br>com mais conforto</br></p>
-                <a href="https://www.google.com.br/" target="_blank">SAIBA MAIS!</a>
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/8.jpg" class="card-img-top align-self-center"
+                  alt="Tênis adiddas preto com detalhes brancos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Addidas Racer</h5>
+                  <p class="card-text">R$ 299,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
             </div>
 
-            <div class="blog">
-
-              
-                    <img src="images/blog3.png" alt="Foto de um homem se alongando">
-         
-                
-                <p class="blogNome">Entenda como fazer o <br>alongamento certo</br></p>
-                <a href="https://www.google.com.br/" target="_blank">SAIBA MAIS!</a>
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="card mt-3 card-size">
+                <img src="./images/9.jpg" class="card-img-top align-self-center"
+                  alt="Tênis adiddas esportivo preto com detalhes brancos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis adiddas Dark</h5>
+                  <p class="card-text">R$ 359,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
             </div>
 
-       </section>
-       <footer>
-         <div class="footerAzul">
-           <P class="textoFooterAzul"> Cadastre-se e receba ofertas e lançamentos antes de todo mundo!  </P>
+          </div>
+        </div>
+      </div>
 
-           <a href="https://www.google.com.br/" target="_blank">
-            <div class="botao-cadastrar">
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden ">Next</span>
+    </button>
+  </div>
 
-              <p>Cadastre-se gratuitamente!</p>
-  
-             </div>
-           </a>
-           
 
-         </div>
-         <div class="footerPreto">
-           <div class="logo2">
-              <img src="./images/White_Logo_LBRW_SVG_Prancheta 1.svg" width="320px" height="60px" alt="logo2">
-           </div>  
-           <div class="redesSociais">
-              <a href="#"><img src="./images/logoInsta.png" width="50px" height="50px" alt="logo instagram"></a>
-              <a href="#"><img src="./images/logoTwitter.png" width="50px" height="50px" alt="logo twitter"></a>
-              <a href="#"><img src="./images/logoFacebook.png" width="50px" height="50px" alt="logo facebook"></a>
-              <a href="#"><img src="./images/logoTwitter2.png" width="50px" height="50px" alt="logo twitter 2"></a>
-           </div>
-           <p class="textoFooterPreto">LBRW - 2022 | Todos os direitos reservados</p>
-           
-         </div>
+  <!-- Texto divisor -->
 
-       </footer>
+  <h1 class="text-divider">MAIS VENDIDOS</h1>
 
-       <!-- Tags bootstrap -->
+  <!-- Seção de produtos -->
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-      <script src="./script.js"></script>
+  <!-- Carrosel de Produtos - slide 1 -->
+
+  <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="card mt-3 card-size">
+                <img src="./images/3.png" class="card-img-top align-self-center"
+                  alt="Tênis da Nike preto com detalhes roxos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike Extend</h5>
+                  <p class="card-text">R$ 499,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="card hide-product mt-3 card-size">
+                <img src="./images/2.png" class="card-img-top align-self-center"
+                  alt="Tênis Fila preto com detalhes amarelos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Fila Sport</h5>
+                  <p class="card-text">R$ 299,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/1.png" class="card-img-top align-self-center"
+                  alt="Tênis Nike preto com detalhes dourados">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike Galaxy</h5>
+                  <p class="card-text">R$ 529,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrossel de Produtos - Slide 2 -->
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/4.png" class="card-img-top align-self-center"
+                  alt="Tênis da Nike Branco com detalhes azuis">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike WL</h5>
+                  <p class="card-text">R$ 422,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="card mt-3 card-size">
+                <img src="./images/5.jpg" class="card-img-top align-self-center"
+                  alt="Tênis da Nike rosa claro com detalhes brancos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike XP</h5>
+                  <p class="card-text">R$ 358,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/6.jpg" class="card-img-top align-self-center"
+                  alt="Tênis da Nike rosa escuro com detalhes amarelos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike Future</h5>
+                  <p class="card-text">R$ 522,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Carossel de Produtos - Slide 3 -->
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/7.jpg" class="card-img-top align-self-center"
+                  alt="Tênis da Nike preto com detalhes brancos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Nike World</h5>
+                  <p class="card-text">R$ 415,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3" type="button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCenter">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="hide-product card mt-3 card-size">
+                <img src="./images/8.jpg" class="card-img-top align-self-center"
+                  alt="Tênis adiddas preto com detalhes brancos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis Addidas Racer</h5>
+                  <p class="card-text">R$ 299,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="card mt-3 card-size">
+                <img src="./images/9.jpg" class="card-img-top align-self-center"
+                  alt="Tênis adiddas esportivo preto com detalhes brancos">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="card-title">Tênis adiddas Dark</h5>
+                  <p class="card-text">R$ 359,00</p>
+                  <a href="#" class="btn btn-primary mt-3 mb-3">COMPRAR</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden ">Next</span>
+    </button>
+  </div>
+
+  <!-- Texto divisor -->
+
+  <h1 class="text-divider">BLOG</h1>
+
+  <!-- Conteúdo do blog -->
+
+  <div class="container mt-5 d-flex justify-content-around align-items-center">
+    <div class="row gap-5">
+      <div class="col-sm mb-3">
+        <div class="card adjust-border adjust-size d-flex justify-content-center align-items-center">
+          <img src="./images/blog1.png" class="card-img-top w-100" alt="Esporotista amarrando o tênis">
+          <div class="card-body">
+            <p class="blog-name">Dicas de cuidados para o seu tênis</p>
+          </div>
+          <div>
+            <a class="link-blog" href="">Leia mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm mb-3">
+        <div class="card adjust-border adjust-size d-flex justify-content-center align-items-center">
+          <img src="./images/blog2.png" class="card-img-top w-100" alt="Esportista se preparando para correr">
+          <div class="card-body">
+            <p class="blog-name">Saiba como correr com mais conforto</p>
+          </div>
+          <div>
+            <a class="link-blog" href="">Leia mais</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm mb-3">
+        <div class="card adjust-border adjust-size d-flex justify-content-center align-items-center">
+          <img src="./images/blog3.png" class="card-img-top w-100" alt="Esportista se alongando">
+          <div class="card-body">
+            <p class="blog-name">Entenda como fazer o alongamento certo</p>
+          </div>
+          <div>
+            <a class="link-blog" href="">Leia mais</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm mb-3">
+        <div class="card adjust-border adjust-size d-flex justify-content-center align-items-center">
+          <img src="./images/Blog4.jpg" class="card-img-top w-100" alt="Esportista se preparando para correr">
+          <div class="card-body">
+            <p class="blog-name">Aprenda qual o tênis certo para o seu esporte</p>
+          </div>
+          <div>
+            <a class="link-blog" href="">Leia mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Área de Cadastro 2 -->
+
+  <div class="mt-5 registration-area2 d-flex justify-content-center align-items-center">
+    <div class="container container-registration-area2 justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col box-button2">
+          <p class="registration-area2-text">Cadastre-se e receba ofertas e lançamentos antes de todo mundo!</p>
+        </div>
+        <div class="col-md-auto d-flex justify-content-center align-items-center">
+          <!-- <button type="button" class="btn btn-secondary btn-lg">Cadastre-se gratuitamente</button> -->
+          <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">
+            Cadastre-se gratuitamente
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Escreva o seu o nome e e-mail</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Nome:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">E-mail:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-dark text-center text-white">
+
+    <!-- logo -->
+
+    <div class="container">
+
+      <section>
+        <img class="tamanho-logo" src="./images/White_Logo_LBRW_SVG_Prancheta 1.svg" alt="logo2">
+      </section>
+
+    </div>
+
+    <!-- Grid container -->
+    <div class="container p-4 pb-0 mb-4">
+      <!-- Section: Social media -->
+      <section class="mb-2">
+        <!-- Facebook -->
+        <a class="btn btn-floating m-1" href="#"><img src="./images/logoInsta.png" alt=""></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-floating m-1" href="#"><img src="./images/logoTwitter.png" alt=""></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-floating m-1" href="#"><img src="./images/logoFacebook.png" alt=""></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-floating m-1" href="#"><img src="./images/logoTwitter2.png" alt=""></a>
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3 mt-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://lucasbelmiro.com.br/">lucasbelmiro.com.br</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Tags bootstrap -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="./script.js"></script>
 </body>
+
 </html>

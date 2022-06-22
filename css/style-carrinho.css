@@ -1,0 +1,294 @@
+p {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#nav-black {
+    background-color: #2F302B;
+    width: 100%;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.btn-outline-dark {
+    border-color: #2F302B;
+    color: #2F302B;
+}
+
+.btn-outline-dark:hover {
+    background-color: #3B3EFB;
+    color: aliceblue;
+    border-color: #3B3EFB;
+}
+
+.icons {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search {
+    margin-right: 20px;
+}
+
+.text-divider {
+    font-size: 32px;
+    color: #3B3EFB;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.image-highlight{
+    width: 80%;
+}
+
+.product-cart-details{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product-cart-name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.product-cart-name2{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.product-shipping{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.muda-quantidade{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px #3B3EFB;
+    border-radius: 5px;
+}
+
+.botao-menos, .botao-mais{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.input-style{
+    border: solid 1px #3B3EFB;
+    border-radius: 5px;
+}
+
+.button-cart{
+    border: none;
+    background-color: #3B3EFB;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.button-cart2{
+    border: none;
+    background-color: #3B3EFB;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    color: whitesmoke;
+    width: 100%;
+    align-self: center;
+}
+
+.stage-cart-1{
+    padding: 15px;
+    background-color: #3B3EFB;
+    width: 50%;
+    border-radius: 10px;
+    color: whitesmoke;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.stage-cart-2{
+    padding: 15px;
+    background-color: #3B3EFB;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(211, 211, 211);
+    margin-top: 40px;
+}
+
+.resume-highlight{
+    font-weight: 500;
+}
+
+
+/* registration-area2 */
+
+.registration-area2 {
+    background-color: #3B3EFB;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 100px;
+}
+
+.registration-area2 .col {
+    width: 100%;
+}
+
+.registration-area2-text {
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.container-registration-area2 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.box-button2 {
+    padding: 0;
+    margin: 0;
+}
+
+.btn-secondary {
+    background-color: whitesmoke;
+    color: #2F302B;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+.btn-secondary:active{
+    background-color: white;
+    color:#2F302B;
+
+}
+
+.btn-secondary:hover {
+    background-color: rgb(214, 212, 212);
+    color: #2F302B;
+}
+
+.btn-secondary p {
+    font-size: 1%;
+}
+
+/* Footer */
+
+.tamanho-logo {
+    width: 266px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+footer .btn {
+    border: none;
+    padding: 0;
+}
+
+footer .btn img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Media Query*/
+
+@media screen and (max-width: 800px) {
+
+
+    .registration-area2-text {
+        text-align: center;
+    }
+
+    .registration-area2 .col {
+        max-width: 120%;
+    }
+
+    .registration-area2{
+        margin-top: 80px;
+    }
+
+    .search {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .adjustment-extra{
+        padding: 0;
+        width: 100px;
+    }
+
+    .responsive{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .stage-cart-1{
+        padding: 10px;
+        background-color: #3B3EFB;
+        width: 100%;
+        border-radius: 10px;
+        color: whitesmoke;
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+
+    .stage-cart-2{
+        padding: 10px;
+        background-color: #3B3EFB;
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgb(211, 211, 211);
+        margin-top: 20px;
+    }
+
+    .product-cart-name{
+        margin-top: 30px;
+    }
+
+    .adjust-col{
+       margin-bottom: 0 !important;
+    }
+
+    .adjust-col2{
+        margin-top: 30px;
+    }
+
+    .product-cart-name2{
+        margin-bottom: 20px;
+    }
+
+    .button-cart{
+        margin-top: 10px;
+    }
+    .adjust-shipping{
+        margin-top: 10px;
+    }
+
+}

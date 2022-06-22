@@ -1,248 +1,36 @@
-#navPreto{
+p {
+    margin: 0;
+}
+
+#nav-black {
     background-color: #2F302B;
     width: 100%;
     height: 30px;
     margin-top: 0px;
     margin-left: 0px;
 }
-#navCinza{
-    background-color: #dbdbdb;
-    width: 100%;
-    height: 100px;
-    margin-top: 0px;
-    margin-left: 0px;
-    
-}
-.logo1{
-    position: absolute;
-    left: 6%;
-    padding-top: 30px;
-    
-}
-.iconesNav{
-    position: absolute;
-    left: 400px;
-    padding-top: 38px;
 
-   
-}
-.space{
-    /* ESPAÇO ENTRE AS IMAGENS HOMEM MULHER CRIANÇA OFERTAS */
-    margin: 0 7px;
-    font-size: 18px;
-    color: #707070;
-    font-weight: 600;
-    text-decoration: none;
-}
-.input-pesquisar{
-    position: absolute;
-    left: 66%;
-    padding-top: 30px;
-    
-}
-.pesquisarImg{
-    position: absolute;
-    left: 82%;
-    padding-top: 35px;
-}
-.iconeCantoDireito{
-    position: absolute;
-    padding-top: 35px;
-    left: 88%;
-}
-.spaceCantoD{
-    margin: 0 5px;
+.btn-outline-dark {
+    border-color: #2F302B;
+    color: #2F302B;
 }
 
-#carouselExampleControls{
-    width: 90%;
-    margin-left: 50%;
-    border-radius: 10px;
-    transform: translateX(-50%);
+.btn-outline-dark:hover {
+    background-color: #3B3EFB;
+    color: aliceblue;
+    border-color: #3B3EFB;
 }
 
-.container-extraproduto{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    
+.icons {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.imagens-produtos .imagem-principal{
-    width: 294px;
-    height: 311px;
-}
-
-.selecao-imagens img{
-    width: 78px;
-    height: 78px;
+.search {
     margin-right: 20px;
 }
 
-.selecao-imagens img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.container-tamanhos{
-    width: 180px;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-
-}
-
-.container-tamanhos div p{
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.container-tamanhos div p:hover{
-    color: white;
-    
-}
-
-.container-tamanhos .tamanho{
-    border: solid 1px #3B3EFB;
-    border-radius: 8px;
-}
-
-.container-tamanhos .tamanho:hover{
-    border: solid 1px #3B3EFB;
-    background-color: #3B3EFB;
-
-}
-
-.escolhas-produto .preco-pag-produto{
-    font-size: 20px;
-    color: #3B3EFB;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.texto-tamanhos{
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 10px;
-
-}
-
-.escolhas-produto h1{
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.escolhas-produto a {
-    text-decoration: none;;
-}
-
-
-
-.botao-adc-carrinho{
-    width: 306px;
-    height: 62px;
-    background-color: #3B3EFB;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.botao-adc-carrinho p{
-   font-size: 20px;
-   font-weight: 600;
-   color:white;
-   margin: 0;
-
-}
-
-.botao-adc-carrinho:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.produtos{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.detalhes{
-
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 100px;
-}
-
-.detalhes-texto p{
-    font-size: 20px;
-    line-height: normal;
-    max-width: 400px;
-}
-
-.detalhes-texto img{
-    margin-top: 30px;
-    max-width: 300px;
-}
-
-.container-carrossel{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.podutos .item-produto{
-    width: 400px; 
-
-}
-
-.produtos .item-produto:hover {
-    transform: scale(1.1);
-    transition: 1s;
-
-}
-
-.produtos .item-produto img{
-    width: 200px;  
-}
-
-.produtos .item-produto p{
-    margin: 10px;
-}
-
-.container-produtos{
-    display: flex;
-    align-items: center;
-    width: 90%;
-}
-
-.container-produtos .produtos a{
-    text-decoration: none;
-}
-
-.seta{
-    width: 30px;
-    height: 30px;
-}
-
-.seta:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-
-.textodivisor{
+.text-divider {
     font-size: 32px;
     color: #3B3EFB;
     margin-left: 4%;
@@ -252,165 +40,277 @@
     font-style: italic;
 }
 
-.preco{
+/* Product datails */
+
+.image-emphasis{
+    width: 50%;
+}
+.image-extra{
+    width: 100%;
+}
+.adjustment-extra{
+    padding: 10px;
+    width: 100px;
+}
+.name-product-detail{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.price-product-detail{
     font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.size-product-detail{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.adjust-shoe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjust-shoe-1 p{
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px #3B3EFB;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.adjust-detail-row{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.adjust-div-datail{
+    
+    align-items: center;
+}
+
+.adjust-button-datail{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.logo-produto-datail{
+    width: 50%;
+    margin-top: 20px;
+}
+
+
+/* Products */
+
+.card-size {
+    width: 18rem;
+}
+
+.card-img-top {
+    width: 70%;
+}
+
+.btn-primary {
+    border-color: #3B3EFB;
+    background-color: #3B3EFB;
+}
+
+.btn-primary:hover {
+    border-color: #2b2dbb;
+    background-color: #2b2dbb;
+}
+
+.carousel-control-next-icon {
+    background-color: #3B3EFB;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon {
+    background-color: #3B3EFB;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Blog */
+
+.adjust-border {
+    border: none;
+}
+
+.adjust-size {
+    width: 100%;
+}
+
+.blog-name {
+    font-weight: bolder;
+    color: #2F302B;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+.margin-botton{
+    margin-top: 100px;
+}
+
+.card-body{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.link-blog{
+    text-decoration: none;
     color: #3B3EFB;
     font-weight: 500;
-}
-
-.nomeProduto{
-    font-size: 22px;
-    color: #2F302B;
-    font-weight: bold;
-    margin-top: -10px;
-}
-
-.infoExtra{
-    font-size: 16px;
-    color: #3B3EFB;
-    margin-top: -13px;
-}
-
-
-.conteudoBlog img{
-  
-    width: 280px;
-    height: 310px;
-    margin:10px; 
-
-    text-align: center;
-
-}
-
-
-.conteudoBlog {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-   
-}
-
-.blog a{
-
     font-size: 18px;
-    text-decoration: none;
-    text-decoration: underline;
-    font-weight: 600;
-    color: #3B3EFB;  
 }
 
-.conteudoBlog .blog a:hover{
-   font-weight: bold;
-   transition: 0.5s;
-}
 
-.blog p{
-    margin: 10px;
-}
+/* registration-area2 */
 
-.blog .blogNome{
-    margin-top: 14px;
-    font-weight:bolder;
-    color: #2F302B;
-    font-size: 24px;
-   
-}
-
-/*----------------------------- FOOTER  ------------------------------------------------------- */
-p{
-    margin:0;
-}
-.footerAzul{
-    background-color: #3b3efb;
+.registration-area2 {
+    background-color: #3B3EFB;
     width: 100%;
-    height: 130px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   
-}
-
-.footerAzul a{
-    text-decoration: none;
-}
-.footerAzul a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;   
-}
-
-.footerPreto{
-    background-color: #2F302B;
-    width: 100%;
-    height: 350px;
-    padding: 60px;
-}
-.footerPreto p{   
-    text-align: center;
-    color: white; 
-}
-.retFaixaAzul{
-    position: absolute;
-    padding-top: 35px;
-    left: 58%;
-}
-
- .botao-cadastrar{
-     width: 306px;
-     height: 62px;
-     background-color: #FFFFFF;
-     border-radius: 100px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin: 20px;
- }
-
- .botao-cadastrar p{
-    font-size: 20px;
-    font-weight: 600;
-    color: #2F302B;
+    height: 100%;
     margin: 0;
-
- }
-
-.textoFooterAzul{
-    color: white;
-    max-width: 400px;
-    font-size: 25px;
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 20px;    
-}
-.textoFooterPreto{
-    
-    font-size: 25px;
-}
-.logo2{
-    text-align: center;
-}
-.redesSociais{
-    padding: 20px;
-    text-align: center;
-    padding-top:40px;
-    padding-bottom: 40px;    
-}
-footer div a{
-    margin: 0 7px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-/* .space:hover{
-    background-color: rgb(197, 197, 197);
-} */
-.clube:hover{
-    font-size: 110%;
-    transition: 1s;
+.registration-area2 .col {
+    width: 100%;
 }
 
-.imagemdecadastro:hover{
-    font-size: 50%;
-    transition: 5ms;
+.registration-area2-text {
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.container-registration-area2 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.box-button2 {
+
+    padding: 0;
+    margin: 0;
+}
+
+.btn-secondary {
+    background-color: whitesmoke;
+    color: #2F302B;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+.btn-secondary:active{
+    background-color: white;
+    color:#2F302B;
+
+}
+
+.btn-secondary:hover {
+    background-color: rgb(214, 212, 212);
+    color: #2F302B;
+}
+
+.btn-secondary p {
+    font-size: 1%;
+}
+
+/* Footer */
+
+.tamanho-logo {
+    width: 266px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+footer .btn {
+    border: none;
+    padding: 0;
+}
+
+footer .btn img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Media Query*/
+
+@media screen and (max-width: 680px) {
+    .card-size {
+        width: 33.33rem;
+    }
+
+    .hide-product {
+        display: none;
+    }
+
+    .registration-area2-text {
+        text-align: center;
+    }
+
+    .registration-area2 .col {
+        max-width: 120%;
+    }
+
+    .search {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .blog-name {
+        font-size: 22px;
+        max-width: 100%;
+    }
+
+    .link-blog{
+        font-size: 22px;
+    }
+
+    .adjustment-extra{
+        padding: 0;
+        width: 100px;
+    }
+
+    .responsive{
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adjust-detail-img-extra{
+        width: 60%;
+        column-gap: 5px;
+    }
+
+    .responsive2{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 20px;
+       text-align: center;
+    }
+
 }
