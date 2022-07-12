@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 p {
     margin: 0;
 }
@@ -58,6 +62,18 @@ p {
     margin-bottom: 1%;
     font-weight: bold;
     font-style: italic;
+}
+
+.cart-lenght{
+    background-color:#3B3EFB;
+    color: aliceblue;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+    display: flex;
+   align-self:flex-end;
+
 }
 
 /* Products */
@@ -235,5 +251,11 @@ footer .btn img {
     .link-blog{
         font-size: 22px;
     }
+
+}
+
+.btn:focus{
+    background-color: rgb(219, 219, 219);
+    color: #2F302B;
 
 }

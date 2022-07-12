@@ -71,20 +71,6 @@ a{
     margin-bottom: 15px;
 }
 
-.muda-quantidade{
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: solid 1px #3B3EFB;
-    border-radius: 5px;
-}
-
-.botao-menos, .botao-mais{
-    padding: 10px;
-    font-size: 18px;
-}
-
 .input-style{
     border: solid 1px #3B3EFB;
     border-radius: 5px;
@@ -137,6 +123,27 @@ a{
 
 .resume-highlight{
     font-weight: 500;
+}
+.button-delete{
+    background-color:white;
+    color: #2F302B;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 10px;
+
+}
+
+.cart-lenght{
+    background-color:#3B3EFB;
+    color: aliceblue;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+    display: flex;
+   align-self:flex-end;
+
 }
 
 
@@ -288,6 +295,10 @@ footer .btn img {
         margin-top: 10px;
     }
     .adjust-shipping{
+        margin-top: 10px;
+    }
+
+    .div-button-cart{
         margin-top: 10px;
     }
 

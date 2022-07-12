@@ -8,7 +8,7 @@
   <title>LBRW - Página do produto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="style-produto.css">
+  <link rel="stylesheet" href="./css/style-produto.css">
 
 </head>
 
@@ -18,7 +18,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./images/Logo_LBRW_SVG.svg" width="200px" alt="logo LBRW"></a>
+      <a class="navbar-brand" href="./index.html"><img src="./images/Logo_LBRW_SVG.svg" width="200px" alt="logo LBRW"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
         aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -71,9 +71,13 @@
           <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
         </form>
   
-        <a class="icons" href=""><img src="./images/heart-solid.png" alt=""></a>
-        <a class="icons" href=""><img src="./images/user-solid.png" alt=""></a>
-        <a class="icons" href=""><img src="./images/shopping-bag-solid.png" alt=""></a>
+        <div class="row gap-0 align-items-center justify-content-center">
+
+          <a class="icons ms-2 pd-0 col" href=""><img src="./images/heart-solid.png" alt=""></a>
+          <a class="icons ms-0 pd-0 col" href=""><img src="./images/user-solid.png" alt=""></a>
+          <a class="icons ms-0 pd-0 col d-flex" href="./carrinho.html"><img src="./images/shopping-bag-solid.png" alt=""><p class="ms-1 cart-lenght d-flex"></p></a>
+
+        </div>
   
       </div>
     </div>
@@ -98,13 +102,38 @@
         <p class="name-product-detail">Nome do produto</p>
         <p class="price-product-detail">R$ 299,00</p> 
         <p class="size-product-detail">Tamanhos</p>
-        <div class="row adjust-detail-row">
-          <div class="col adjust-shoe-1"><p>38</p></div>
-          <div class="col adjust-shoe-1"><p>40</p></div>
-          <div class="col adjust-shoe-1"><p>41</p></div>
-          <div class="col adjust-shoe-1"><p>44</p></div> 
+        <div class="row adjust-detail-row mt-3 mb-3 ms-0">
+
+          <div class="form-check form-check-inline col">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="38">
+            <label class="form-check-label" for="inlineRadio1">38</label>
+          </div>
+          <div class="form-check form-check-inline col">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="40">
+            <label class="form-check-label" for="inlineRadio2">40</label>
+          </div>
+          <div class="form-check form-check-inline col">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="41">
+            <label class="form-check-label" for="inlineRadio2">41</label>
+          </div>
+          <div class="form-check form-check-inline col">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="44">
+            <label class="form-check-label" for="inlineRadio2">44</label>
+          </div>
+
         </div>
-        <a href="#" class="btn btn-primary mt-3 mb-5 adjust-button-datail">Adicionar ao carrinho</a>
+
+        <div class="col botoes d-flex align-items-center "> 
+          <p>Quantidade:</p>
+          <a href="javascript:diminui()" target="_self"> <div class="botao-menos"> <p>-</p> </div> </a> 
+          <div class="muda-quantidade"> <p id="quantidadeProduto">1</p> </div> 
+            <a href="javascript:aumenta()" target="_self"> <div class="botao-mais"> <p>+</p> </div> </a> 
+        </div>
+
+        <button2 id="testando" type="button" class="btn btn-primary mt-3 mb-5 adjust-button-datail button-product-detail" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          Adicionar ao carrinho
+        </button2>
+
       </div>
         
     </div>
@@ -412,6 +441,25 @@
     </div>
   </div>
 
+  <!-- Modal 2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Aviso</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Você já selecionou o tamanho do seu produto? Se sim, Prossiga para o carrinho. Se não, clique em fechar e selecione o tamanho por favor.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <a type="button" class="btn btn-primary button3" >Ir ao carrinho</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <footer class="bg-dark text-center text-white">
 
@@ -454,94 +502,10 @@
     <!-- Copyright -->
   </footer>
 
-
-  <!-- <section class="container-extraproduto">
-
-    <div class="imagens-produtos">
-
-      <img class="imagem-principal" src="./images/1.png" alt="Tênis nike">
-
-      <div class="selecao-imagens">
-        <img src="./images/imagenone.png" alt="">
-        <img src="./images/imagenone.png" alt="">
-        <img src="./images/imagenone.png" alt="">
-      </div>
-    </div>
-
-    <div class="escolhas-produto">
-      <h1>Nome do Produto</h1>
-      <p class="preco-pag-produto">R$ 299,00</p>
-      <p class="texto-tamanhos">Tamanhos</p>
-
-      <div class="container-tamanhos">
-        <div class="tamanho">
-          <p>38</p>
-        </div>
-        <div class="tamanho">
-          <p>40</p>
-        </div>
-        <div class="tamanho">
-          <p>41</p>
-        </div>
-        <div class="tamanho">
-          <p>44</p>
-        </div>
-
-      </div>
-
-      <a href="carrinho.html" target="_self">
-        <div class="botao-adc-carrinho">
-
-          <p>Adicionar ao carrinho</p>
-
-        </div>
-      </a>
-
-
-    </div>
-
-
-  </section> -->
-
-
-  <!-- Texto divisor -->
-
- <!--  <h1 class="textodivisor">DETALHES</h1>
-
-
-  <section class="detalhes">
-    <div class="detalhes-texto">
-      <p>A Nike uniu forças para gerar <br>conscientização com este<br> tênis de corrida. Precisamente<br> posicionada,
-        a entressola Nike<br> 4D FWD direciona seus pés<br> para frente e reduz o impacto,<br> proporcionando uma
-        corrida suave.</p>
-      <img src="./images/Figura-Nike-Logo-PNG.png" alt="logo da Nike">
-    </div>
-
-    <div class="detalhes-texto">
-
-      <p>Ajuste similar ao de uma meia<br>
-        Fecho de cadarço<br>
-        Cabedal têxtil<br>
-        Sensação aconchegante e de amortecimento<br>
-        Estrutura de treliça para absorção de impactos<br>
-        Entressola adidas 4D<br>
-        Drop: 11 mm (calcanhar: 30 mm / ponta do pé: 19 mm)<br>
-        Solado de borracha Stretchweb<br>
-        Cor do artigo: Core Black / Cloud White / Hazy Emerald<br>
-        Código do artigo: GX6313
-      </p>
-    </div>
-
-  </section>
-
- -->
-
-  <!-- Tags bootstrap -->
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
   </script>
-  <script src="./script.js"></script>
+  <script src="./app/script-productpage.js"></script>
 </body>
 
 </html>

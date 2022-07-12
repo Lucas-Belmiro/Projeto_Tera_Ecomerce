@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="nav-black"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./images/Logo_LBRW_SVG.svg" width="200px"
+                    alt="logo LBRW"></a>
+            <button4 class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button4>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Masculino
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Casual</a></li>
+                            <li><a class="dropdown-item" href="#">Esportivo</a></li>
+                            <li><a class="dropdown-item" href="#">Festa</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Feminino
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Casual</a></li>
+                            <li><a class="dropdown-item" href="#">Esportivo</a></li>
+                            <li><a class="dropdown-item" href="#">Festa</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Infantil
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Casual</a></li>
+                            <li><a class="dropdown-item" href="#">Esportivo</a></li>
+                            <li><a class="dropdown-item" href="#">Festa</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="search d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Nome do produto" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+                </form>
+
+                <div class="row gap-0 align-items-center justify-content-center buttons-icons">
+
+                    <a class="icons ms-2 pd-0 col" href=""><img src="./images/heart-solid.png" alt=""></a>
+                    <a class="icons ms-0 pd-0 col" href=""><img src="./images/user-solid.png" alt=""></a>
+                    <a class="icons ms-0 pd-0 col d-flex" href=""><img src="./images/shopping-bag-solid.png" alt="">
+                        <p class="ms-1 cart-lenght d-flex"></p>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="box-registration">
+
+        <div class="container">
+
+            <div class="form">
+
+                <div class="title">
+                    Faça aqui seu cadastro
+                </div>
+                <form id="form-user" action="#" method="post">
+                    <div class="form-box error" data-errormsg="">
+                        <label for="input-first">Nome</label>
+                        <input type="text" id="input-first" autofocus placeholder="nome e sobrenome" tabindex="1" />
+                    </div>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-password">Senha</label>
+                        <input type="password" id="input-password" required placeholder="senha" tabindex="2" />
+                    </div>
+                    <div class="form-box" data-errormsg="">
+                        <label for="input-email">E-mail</label>
+                        <input type="email" id="input-email" required placeholder="exemplo@email.com" tabindex="3" />
+                    </div>
+                    <div class="button-box">
+                        <button id="button-send">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="bg-dark text-center text-white">
+
+        <!-- logo -->
+
+        <div class="container">
+
+            <section>
+                <img class="tamanho-logo" src="./images/White_Logo_LBRW_SVG_Prancheta 1.svg" alt="logo2">
+            </section>
+
+        </div>
+
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 mb-4">
+            <!-- Section: Social media -->
+            <section class="mb-2">
+                <!-- Facebook -->
+                <a class="btn btn-floating m-1" href="#"><img src="./images/logoInsta.png" alt=""></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-floating m-1" href="#"><img src="./images/logoTwitter.png" alt=""></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-floating m-1" href="#"><img src="./images/logoFacebook.png" alt=""></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-floating m-1" href="#"><img src="./images/logoTwitter2.png" alt=""></a>
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 mt-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="https://lucasbelmiro.com.br/">lucasbelmiro.com.br</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- Tags bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="./app/script-cadastro.js"></script>
+</body>
+
+</html>
