@@ -15,6 +15,14 @@ Confira o branding do projeto em: [Brand LBRW](https://lucasbelmiro.myportfolio.
 - [x] Bootstrap
 - [ ] Back-end (Node, Express e Mongo)
 - [ ] React
+- [ ] Python
+- [ ] Flask
+- [ ] SQL
+- [ ] PHP
+- [ ] LARAVEL
+- [ ] AWS
+- [ ] Mentalidade Ágil
+- [ ] DEMODAY :partying_face: (Apresentação do Projeto final)
 
 
 
