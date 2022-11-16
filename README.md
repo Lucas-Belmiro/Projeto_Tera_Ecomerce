@@ -13,8 +13,6 @@ Antes de passar o projeto para REACT (framework de javaScript para front-end), d
 
 ``` Git/GitHub HTML, CSS, JavaScript, Bootstrap ```
 
-Confira o branding do projeto em: [Brand LBRW](https://lucasbelmiro.myportfolio.com/lbrw-loja-de-calcados)
-
 # #
 ![preview](https://i.ibb.co/SQFrBSC/Prancheta-1-copiar-2.jpg)
 
