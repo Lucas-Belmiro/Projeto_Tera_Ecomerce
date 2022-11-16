@@ -5,26 +5,16 @@
 
 Acesse a página com o site publicado: [página completa](https://lucas-belmiro.github.io/Projeto_Tera_Ecomerce/)
 
+#### História do Projeto:
+
+Antes de passar o projeto para REACT (framework de javaScript para front-end), desenvolvi este projeto com HTML, CSS, Bootstrap e JavaScript. Ele funcionou como uma consolidação de conhecimentos nessas tecnologias. 
+
 ##### Tecnologias utilizadas:
 
-``` Git/GitHubm HTML, CSS, JavaScript, Bootstrap, Node.js + express + MongoDB, React ```
+``` Git/GitHub HTML, CSS, JavaScript, Bootstrap ```
 
 Confira o branding do projeto em: [Brand LBRW](https://lucasbelmiro.myportfolio.com/lbrw-loja-de-calcados)
 
-##### Etapas: 
-
-- [x] Front-end (HTML, CSS e JavaSricpt)
-- [x] Bootstrap
-- [ ] Back-end (Node, Express e Mongo)
-- [ ] React
-- [ ] Python
-- [ ] Flask
-- [ ] SQL
-- [ ] PHP
-- [ ] LARAVEL
-- [ ] AWS
-- [ ] Mentalidade Ágil
-- [ ] DEMODAY :partying_face: (Apresentação do Projeto final)
 # #
 ![preview](https://i.ibb.co/SQFrBSC/Prancheta-1-copiar-2.jpg)
 

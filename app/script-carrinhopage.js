@@ -113,7 +113,6 @@ console.log(BoxValueQuantity);
 
 let itens = JSON.parse(localStorage.getItem('itens')) || [];
 
-
 let array = itens;
 
 // remove error on update
